@@ -1,4 +1,20 @@
 repos:
+  # Check nix
+  - repo: local
+    hooks:
+      - id: nix-build-check
+        name: Verify Nix build
+        entry: nix build
+        language: system
+        pass_filenames: false
+        stages: [commit]
+
+      - id: go-mod-tidy
+        name: Check go.mod is tidy
+        entry: bash -c 'go mod tidy && git diff --exit-code go.mod go.sum'
+        language: system
+        files: '^go\.(mod|sum)$'
+        pass_filenames: false
   # Go hooks
   - repo: https://github.com/tekwizely/pre-commit-golang
     rev: v1.0.0-rc.1

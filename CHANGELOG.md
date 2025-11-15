@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/badele/gosect/compare/v0.2.1...v0.2.2) (2025-11-15)
+
+
+### Bug Fixes
+
+* golang dependencies ([#5](https://github.com/badele/gosect/issues/5)) ([e886232](https://github.com/badele/gosect/commit/e886232121fd48277260c88ea9e62f7aa76cb3b2))
+
 ## [0.2.1](https://github.com/badele/gosect/compare/v0.2.0...v0.2.1) (2025-11-15)
 
 

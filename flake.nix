@@ -23,7 +23,7 @@
           # x-release-please-end
           src = ./.;
 
-          vendorHash = "sha256-MLB5GkonUqY/IGCmh/rqGvkdTMJzGwiNqkhGB3v7jTo=";
+          vendorHash = null;
 
           meta = with pkgs.lib; {
             description = "A tool to replace sections in files written in Go";

@@ -1,0 +1,14 @@
+# Exclure les fichiers de développement
+.git
+.gitignore
+*.md
+gosect
+.env
+*.log
+
+# Exclure les fichiers de build locaux
+*.so
+*.dylib
+
+# Exclure les dépendances de test
+*_test.go
